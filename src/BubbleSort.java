@@ -2,9 +2,7 @@
 public class BubbleSort {
     public static void main(String[] args) {
         int[] array = new int[]{45, 22, 11, 35, 67, 12, 81, 3, 57, 14, 8, 99, 19, 71, 13, 77};
-
         bubbleSort(array);
-
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
