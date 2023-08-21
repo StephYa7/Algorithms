@@ -1,14 +1,15 @@
-import java.util.Arrays;
-
 public class QuickSort {
     public static void main(String[] args) {
-        int[] array = new int[]{45, 22, 11, 35, 67, 12, 81, 3, 57, 14, 8, 99, 19, 71, 13, 77};
-        quickSort(array, 0, array.length - 1);
+        int[] array = new int[]{45, 22, 11, 35, 67, 12, 81, 3, 11, 57, 14, 8, 99, 19, 71, 13, 77, 20};
+        quickSort(array);
         for (int j : array) {
             System.out.print(j + " ");
         }
     }
 
+    public static void quickSort(int[] array){
+        quickSort(array, 0, array.length-1);
+    }
 
     public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
