@@ -1,3 +1,5 @@
+package Sort;
+
 public class MergeSort {
     public static void main(String[] args) {
         int[] array = new int[]{45, 22, 11, 35, 67, 12, 81, 3, 57, 14, 8, 99, 19, 71, 13, 77};
@@ -6,7 +8,6 @@ public class MergeSort {
             System.out.print(j + " ");
         }
     }
-
 
     public static void mergeSort(int list[]) {
         if (list.length < 2) {
@@ -21,11 +22,9 @@ public class MergeSort {
         for (int i = mid; i < list.length; i++) {
             rightArr[i - mid] = list[i];
         }
-
         mergeSort(leftArr);
         mergeSort(rightArr);
         merge(list, leftArr, rightArr);
-
     }
 
     public static void merge(int[] arr, int[] leftArr, int[] rightArr) {
@@ -37,8 +36,7 @@ public class MergeSort {
             if (leftArr[minLeft] <= rightArr[minRight]) {
                 arr[min] = leftArr[minLeft];
                 minLeft++;
-            }
-            else  {
+            } else {
                 arr[min] = rightArr[minRight];
                 minRight++;
             }
